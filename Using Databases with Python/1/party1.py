@@ -1,3 +1,5 @@
+
+# class PartyAnimal 
 class PartyAnimal:
 
 	x = 10
@@ -6,9 +8,20 @@ class PartyAnimal:
 		self.x = self.x + 1
 		print "So far", self.x
 
-an = PartyAnimal()
+	def brark1(self):
+		print "gua gua gua"
 
-an.party()
+	def brakr2(self):
+		print "mmiau mmiau mmiau"
+
+an = PartyAnimal() # create object
+
+an.party() # use to method party
 
 print "Type", type(an)
 print "Dir", dir(an)
+
+an.party()
+an.brark1()
+an.brakr2()
+

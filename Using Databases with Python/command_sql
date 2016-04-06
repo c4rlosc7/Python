@@ -1,0 +1,51 @@
+
+- Start a simple table 
+CREATE TABLE Users(
+name VARCHAR(128),
+email VARCHAR(128)
+)
+
+- SQL Insert
+INSERT INTO Users(name, email) VALUES ('carlos', 'c4rlosc7@gmail.com')
+
+-SQL Delete
+DELETE FROM Users WHERE email='c4rlosc7@gmail.com'
+
+- SQL Update
+UPDATE Users SET name='carlos' WHERE email='camartinez7@hotmail.com'
+
+-Retrieving Records
+SELECT * FROM Users WHERE email='c4rlosc7@gmail.com' ORDER BY email
+
+---------------------------------------------------------------------------------
+-EXAMPLE MUSIC-DB-
+
+-----------create table Artist
+CREATE TABLE Artist (
+id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
+name TEXT
+)
+
+-----------create table Genre
+CREATE TABLE Genre (
+id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
+name TEXT
+)
+
+-----------create table Album
+CREATE TABLE Album (
+id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
+artist_id INTEGER,
+title TEXT
+)
+
+-----------create table Track
+CREATE TABLE Track (
+id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
+title TEXT,
+album_id INTEGER,
+genre_id INTEGER,
+len INTEGER,
+rating INTEGER,
+count INTEGER,
+)

@@ -20,12 +20,13 @@
 # an.party()
 # an.party()
 
+# class PartyAnimal
 class PartyAnimal:
 	x = 0
 	name = ""
 
-	def __init__(self, z):
-		self.name = z
+	def __init__(self, nam):
+		self.name = nam
 		print self.name, "constructed"
 
 	def party(self):
@@ -46,22 +47,3 @@ s.party()
 j = FooballFan("Jim")
 j.party()
 j.touchdown()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
