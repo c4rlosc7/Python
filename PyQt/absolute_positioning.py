@@ -2,14 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-ZetCode PyQt4 tutorial 
-
-This example shows three labels on a window
-using absolute positioning. 
-
-author: Jan Bodnar
-website: zetcode.com 
-last edited: October 2011
+labels using absolute positioning. 
 """
 
 import sys
